@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRO INSTAGRAM</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-form">
+            <img src="logo.png">
+            <p>Cadastrar-se para ver fotos e<br> videos do seus amigos</p>
+            <div class="cadastro-face">
+                <button type="submit">Entrar com Facebook</button>
+            </div>
+            <div class="linha-horizontal">
+                <div class="line"></div>
+                <div class="fine">ou</div>
+                <div class="line"></div> 
+            </div>
+            <form action="/cadastrar" method="post">
+                <input type="text" name="nome_completo" placeholder="Nome completo" required>
+                <input type="text" name="nome_usuario" placeholder="Nome de usuário" required>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <input type="password" name="senha" placeholder="Senha" required>
+                <input type="submit" value="Cadastrar-se">
+            </form>
+            <p>Já tem uma conta? <a href="/login" class="login-link">Faça login</a></p>
+        </div>
+        <div class="store-links">
+            <img src="appstore.png" alt="" class="download">
+            <img src="googleplay.png" alt="" class="download">
+
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>
